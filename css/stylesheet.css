@@ -1,0 +1,11 @@
+.header {
+  background-color: ivory;
+}
+
+body {
+  background-image: url(../images/night.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #4169E1;
+}
+/*# sourceMappingURL=stylesheet.css.map */
