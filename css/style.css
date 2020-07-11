@@ -1,11 +1,12 @@
 .header {
-  background-color: red;
+  background-color: ivory;
 }
 
-body {
+html, body {
   background-image: url(../images/night.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #4169E1;
+  background-color: #000000;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
