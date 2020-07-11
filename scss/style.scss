@@ -3,24 +3,32 @@
     background-color: ivory;
 }
 // Background main body //
-html, body {
-    background-image: url(../images/night.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000;
-    height: 100%;
-}
+//html, body {
+    //background-image: url(../images/night.jpg);
+    //background-repeat: repeat;
+    //background-size: cover;
+    //background-color: #000000;
+    //height: 100%;
+//}
+body {
+    background: 
+    linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #232323;
+  }
 // Image formatting //
 #giphyImages {
     display: flex;
     justify-content: space-around;
-    height: 150px;
     flex-wrap: wrap;
 }
-#giphyImages.img {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 40%;
-}
+//#giphyImages.img {
+    //margin-top: 5px;
+    //margin-bottom: 5px;
+    //margin-left: 5px;
+    //margin-right: 5px;
+    //width: 40%;
+//}
