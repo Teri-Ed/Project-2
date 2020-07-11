@@ -10,3 +10,17 @@ html, body {
     background-color: #000000;
     height: 100%;
 }
+// Image formatting //
+#giphyImages {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    flex-wrap: wrap;
+}
+#giphyImages.img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 40%;
+}
