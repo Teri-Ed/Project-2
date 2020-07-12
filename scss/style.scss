@@ -2,14 +2,50 @@
 .header {
     background-color: ivory;
 }
-// Background main body //
-//html, body {
-    //background-image: url(../images/night.jpg);
-    //background-repeat: repeat;
-    //background-size: cover;
-    //background-color: #000000;
-    //height: 100%;
-//}
+
+// Navigtion formatting //
+.container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mainHeader .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #2f4f4f;
+}
+.header {
+    background-color: #2f4f4f;
+}
+h1.header a {
+    color: #fffff0;
+    background-color: #2f4f4f;
+}
+ul.navigation {
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+li.navlist {
+    display: inline-block;
+}
+li.navlist a {
+    display: inline-block;
+    padding: 10px;
+    color: #fffff0;
+    text-align: center;
+    text-decoration: none;
+}
+li.navlist.navlink {
+    padding: 25px;
+}
+// Changes link to black on hover //
+li.navlist a:hover {
+    background-color: #000000;
+}
 body {
     background: 
     linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
@@ -25,10 +61,3 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-//#giphyImages.img {
-    //margin-top: 5px;
-    //margin-bottom: 5px;
-    //margin-left: 5px;
-    //margin-right: 5px;
-    //width: 40%;
-//}
