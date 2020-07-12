@@ -14,10 +14,10 @@
           <h1 class="header"><a href="index.html" alt="Homepage">The GIF Giver</a></h1>
           <nav>
             <ul class="navigation">
-              <li class="navlist"><a class="navink" href="index.html" alt="Homepage">Autoplay</a></li>
-              <li class="navlist"><a class="navink" href="controls.html" alt="API Query With Controls">Controls</a></li>
-              <li class="navlist"><a class="navink" href="stillimages.html" alt="API Query Still Images">Still</a></li>
-              <!-- This is my search button -->             
+                <li class="navlist"><a class="navink" href="index.html" alt="Homepage">Autoplay</a></li>
+                <li class="navlist"><a class="navink" href="controls.html" alt="API Query With Controls">Controls</a></li>
+                <li class="navlist"><a class="navink" href="stillimages.html" alt="API Query Still Images">Still</a></li>
+                <!-- This is my search button -->             
                 <li class="navlist">
                   <form>
                     <input id="search" type="search" placeholder="Search">
@@ -55,14 +55,14 @@
                 .done(function(res) {
                   var searchOutput = res.data
                   $.each(searchOutput, function(i, e) {
-                    //console.log("index", i, "element", e.images.preview_webp.url)
+                    //console.log("index", i, "element", e)
                     var giphy = e.images.looping.mp4
                     console.log("giphy", giphy)
-                    $("#giphyImages").append(`<video autoplay="autoplay" loop="loop" width="320" height="240"> <source src="${giphy}" alt="Giphy"> </video>`)
+                    $("#giphyImages").append(`<video width="320" height="240"> <source src="${giphy}" alt="Giphy"> </video>`)
                   })
                 })
           })
         });
       </script>
     </body>
-</html>  
+</html> 
