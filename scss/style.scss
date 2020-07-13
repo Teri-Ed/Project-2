@@ -62,15 +62,33 @@ body {
     background-color: #232323;
   }
 // Image formatting //
-#giphyImages {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+@media (max-width: 480px) {
+    #giphyImages {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 400px;
+    }
+}
+@media (max-width: 1024px) {
+    #giphyImages {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 250px;
+    }
+}
+@media (min-width: 1024px) {
+    #giphyImages {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 150px;
+    }
 }
 // Text fomatting //
 .introText {
     background-color: #fffff0;
-    margin-top: 50px;
     margin-bottom: 10px;
     margin-left: 50px;
     margin-right: 50px;
@@ -97,6 +115,6 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-bottom: 0;
+    bottom: 0;
     background-color: #992d2d;
 }
